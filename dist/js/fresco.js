@@ -3510,7 +3510,8 @@ var _Fresco = {
 
       case "array":
         $.each(object, function(i, item) {
-          var view = new View(item, options);
+          var itemOptions = options[i];
+          var view = new View(item, itemOptions);
           views.push(view);
         });
         break;
