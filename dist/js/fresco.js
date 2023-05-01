@@ -3460,7 +3460,7 @@ var _Fresco = {
       object_type,
       isElement = _.isElement(object);
 
-    switch ((object_type = typeof object)) {
+    switch ((object_type = $.type(object))) {
       case "string":
       case "object":
         var view = new View(object, options),
